@@ -12,7 +12,7 @@ cq(){
 }
 
 ca(){
-	(cd /$PATH_TO_SCRIPT_DIR &&	"$@" 2>&1 | uv run main.py assist)
+	(cd /$PATH_TO_SCRIPT_DIR && "$@" 2>&1 | uv run main.py assist)
 	history -n
 
 }
